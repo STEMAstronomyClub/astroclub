@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    color: white;
+    background-image: url("images/home-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sizer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 10;
+    background: linear-gradient(270.33deg, rgba(0, 102, 204, 0.7) -7.42%, rgba(160, 97, 181, 0.7) 118.81%);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo{
+    width: 180px;
+    height: 62px;
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 62px;
+    cursor: pointer;
+}
+
+.rightSec{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links{
+    display: block;
+    height: 100%;
+    padding: 18px 30px;
+    border-width: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.list {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.list img {
+    width: 30px;
+    height: 30px;
+}
+
+.links:hover {
+    background-color: rgb(255, 255, 255, 0.1)
+}
+
+.list:hover {
+    background-color: rgb(255, 255, 255, 0.1)
+}
+
+.menu {
+    margin-top: 64px;
+    background-color: #005bb5;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu a {
+    display: block;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+/****************************************************/
+
+@media (max-width: 1000px) {
+    .links {
+        display: none;
+    }
+    .rightSec {
+        width: fit-content;
+    }
+    .list {
+        display: flex;
+    }
+    .back {
+        background: none;
+        background-color: #005bb5;
+    }
+}
+@media (max-width: 500px) {
+    .sizer {
+        width: 95%;
+    }
+}
+
+/****************************************************/
+
+.coming-soon {
+    background-color: #4D4D4D47;
+    margin: 164px auto 100px auto;
+    padding: 50px;
+    border-radius: 18px;
+}
+
+.coming-soon h1 {
+    font-family: "Rubik One", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.coming-soon p {
+    width: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.coming-soon a {
+    color: #0066cc;
+}
+
+/****************************************************/
+@media only screen and (max-width: 1024px) {
+    .coming-soon {
+        margin: 120px auto 80px auto;
+        padding: 40px;
+    }
+
+    .coming-soon h1 {
+        font-size: 32px;
+    }
+
+    .coming-soon p {
+        width: 90%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .coming-soon {
+        margin: 100px auto 60px auto;
+        padding: 35px;
+    }
+
+    .coming-soon h1 {
+        font-size: 28px;
+    }
+
+    .coming-soon p {
+        width: 95%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .coming-soon {
+        margin: 80px auto 40px auto;
+        padding: 30px;
+    }
+
+    .coming-soon h1 {
+        font-size: 24px;
+    }
+
+    .coming-soon p {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/****************************************************/
+
+.footer{
+    margin-top: auto;
+    display: flex;
+    background-color: rgba(77, 77, 77, 0.3);
+    height: 280px;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.contact {
+    margin-top: 50px;
+}
+
+.clubLogo{
+    width: 180px;
+    height: 62px;
+}
+
+.facebook a, .email p{
+    display: inline;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    height: fit-content;
+}
+
+.facebook img, .email img {
+    width: 20px;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
+
+.facebook {
+    margin: 20px 0;
+}
+
+.facebook a:hover {
+    color: #0066cc;
+}
+
+.activities{
+    width: fit-content;
+    margin-top: 50px;
+}
+.main{
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.Main{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.mainLinks a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 14px;
+    text-align: left;
+    color: #C8CAD0;
+    white-space: nowrap;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.mainLinks a:hover {
+    color: white;
+}
+
+.Line{
+    width: 100%;
+    height: 21px;
+    background: linear-gradient(270.33deg, rgba(0, 102, 204, 0.7) -7.42%, rgba(160, 97, 181, 0.7) 118.81%);
+}
+
+/****************************************************/
+
+@media (max-width: 900px) {
+
+    .main {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .activities {
+        display: none;
+    }
+}
+
+/****************************************************/

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("images/contact-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test {
+    background-color: #4D4D4D47;
+    margin-top: 50px;
+    width: 80%;
+    margin-inline: auto;
+    padding: 50px 0;
+    border-radius: 18px;
+}
+
+h1 {
+    font-family: "Rubik One", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sub {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#b1, #b2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#b1:hover { 
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#b2:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#b1 {
+    transform: translateX(20px) rotate(90deg);
+}
+
+#b2 {
+    transform: translateX(-20px) rotate(-90deg);
+}
+
+.imgs img { 
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgs {
+    display: flex;
+    width: 50%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.cover {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+}
+
