@@ -34,16 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function drop() {
-    if(menu.style.height === "0px") {
-        menu.style.height = '360px';
-        back.style.borderBottom = '1px solid rgb(255, 255, 255, 0.3)';
-    }
-    else {
-        menu.style.height = '0';
-        back.style.borderBottom = 'none';
+    const currentHeight = window.getComputedStyle(menu).height;
+    if (currentHeight === "0px") {
+        menu.style.height = "360px";
+        back.style.borderBottom = "1px solid rgba(255, 255, 255, 0.3)";
+    } else {
+        menu.style.height = "0";
+        back.style.borderBottom = "none";
     }
 }
-list.addEventListener('click', drop);
+
+list.addEventListener('click', drop, { once: false });
 
 window.addEventListener("resize", function () {
 
